@@ -14,6 +14,17 @@ Initialize the application
 
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
+## Run storybook
+
+---
+Inside the bash
+
+```bash
+npm run storybook
+```
+
+Open [http://localhost:6006/](http://localhost:6006/) to view it in the browser.
+
 ## Run tests
 
 ---
