@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import sideImageSrc from '../../../assets/images/temporary.png'
+import sideImageSrc from '../../../shared/assets/images/temporary.png'
 
 export const LoginContainer = styled.div`
     width: 100%;

@@ -1,5 +1,5 @@
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
-import './assets/style/global.css'
+import './shared/assets/style/global.css'
 import Index from './pages/Index/Index'
 import Main from './pages/Main/Main'
 
