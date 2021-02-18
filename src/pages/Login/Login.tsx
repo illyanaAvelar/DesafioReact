@@ -1,7 +1,7 @@
 
 import { useEffect } from 'react';
-import {LoginContainer, Input, Button, LoginFields, BackgroundImage, Label, StyledLink} from './StyledComponents/index'
-import logoImage from '../../assets/images/logo.png'
+import {LoginContainer, Input, Button, LoginFields, BackgroundImage, Label, StyledLink} from '../../components/Login/StyledComponents/index'; 
+import logoImage from '../../assets/images/logo.png';
 import { Link } from 'react-router-dom';
 
 const Login = () => {
@@ -23,7 +23,7 @@ const Login = () => {
           <Input placeholder='email@exemplo.com'/>
           <Label>Senha</Label>
           <Input placeholder='Digite sua senha' type='password'/>
-          <Link to='/logged-in'>
+          <Link to='/main'>
             <Button>LOGIN</Button>
           </Link>
       </LoginFields>
