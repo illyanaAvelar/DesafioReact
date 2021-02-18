@@ -7,9 +7,9 @@ const Slider = (props:any) => {
     const getWidth = () => window.innerWidth
 
     const [state, setState] = useState({
-        activeIndex: 0,
         translate: 0,
-        transition: 0.45
+        transition: 0.45,
+        activeIndex: 0
     })
 
     const { translate, transition, activeIndex } = state
@@ -56,7 +56,8 @@ const Slider = (props:any) => {
                 {props.slides.map((slide:number, i:number) => (
                 <Slide key={slide + i} content={slide} />
                 ))}
-            </SliderContent>    
+            </SliderContent>   
+            TESTEEEEEEEE 
             <Arrow direction="left" handleClick={prevSlide} />
             <Arrow direction="right" handleClick={nextSlide} />
         </StyledSlider>
