@@ -1,9 +1,8 @@
 
 import { useEffect } from 'react';
-import logoImage from '../../assets/images/logopb.png'
-import {LoginContainer, Input, SideImage} from './StyledComponents/index'
-
-import sideImageSrc from '../../assets/images/temporary.jpg'
+import {LoginContainer, Input, Button, LoginFields, BackgroundImage, Label, StyledLink} from './StyledComponents/index'
+import logoImage from '../../assets/images/logo.png'
+import { Link } from 'react-router-dom';
 
 const Login = () => {
 
@@ -13,17 +12,21 @@ const Login = () => {
 
   return (
     <LoginContainer>
-        <SideImage/>
-        <div className='login-container'>
-            <div className='login-logo'>
-                <img width={170} height={50} src={logoImage} alt='logo'/>
-                <h2>LOCALIZA</h2>
-            </div>
-            <div className='login-fields' style={{display: 'flex', flexDirection: 'column'}}>
-                <Input placeholder='login'/>
-                <Input placeholder='senha'/>
-            </div>
-        </div>
+        <BackgroundImage />
+        <LoginFields>
+          <img width={180} height={50} alt='logo' src={logoImage} style={{margin: 15, marginRight:50}}/>
+          <h2>Entre ou Registre-se</h2>
+          <Link to='/register'>
+            <StyledLink>Ainda não tenho uma conta</StyledLink>
+          </Link>
+          <Label>Login</Label>
+          <Input placeholder='email@exemplo.com'/>
+          <Label>Senha</Label>
+          <Input placeholder='Digite sua senha' type='password'/>
+          <Link to='/logged-in'>
+            <Button>LOGIN</Button>
+          </Link>
+      </LoginFields>
     </LoginContainer>
   );
 }

@@ -1,10 +1,10 @@
-export interface ListaBotoes {
+export interface ILogin {
     label: string | number;
     background: string;
     color: string;
   }
   
-  export enum CalculadoraAcoes {
+  export enum Login {
     limparVisor = 'C',
     apagarUltimoItem = '⌫',
     calcular = '=',
