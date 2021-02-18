@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState } from 'react'
 import { StyledSlider, SliderContent } from '../styledComponents'
 import Slide from './Slide'
 import Arrow from './Arrow'
@@ -56,8 +56,7 @@ const Slider = (props:any) => {
                 {props.slides.map((slide:number, i:number) => (
                 <Slide key={slide + i} content={slide} />
                 ))}
-            </SliderContent>   
-            TESTEEEEEEEE 
+            </SliderContent>    
             <Arrow direction="left" handleClick={prevSlide} />
             <Arrow direction="right" handleClick={nextSlide} />
         </StyledSlider>

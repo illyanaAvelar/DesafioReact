@@ -73,3 +73,26 @@ export const StyledDots = styled.div`
     align-items: center;
     justify-content: center;
 `;
+
+export const DateTimeContainer = styled.div`
+  width: 70%;
+  height: 150px;
+  background-color: gold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 370px;
+`;
+
+export const InputContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+`;
+
+export const Label = styled.label`
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;
+`;

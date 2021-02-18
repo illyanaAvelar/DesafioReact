@@ -1,5 +1,7 @@
 import Slider from '../../components/Main/components/Slider'
-
+import DateAndTime from '../../components/Main/components/DateAndTime'
+import Footer from '../../shared/components/Footer/Footer'
+import Header from '../../shared/components/Header/Header'
 const images = [
   'https://images.unsplash.com/photo-1449034446853-66c86144b0ad?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80',
   'https://images.unsplash.com/photo-1470341223622-1019832be824?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2288&q=80',
@@ -9,9 +11,11 @@ const images = [
 
 const Main = () => {
     return(
-        <div>MAIN
-        <Slider slides={images} />
-        </div>
+    <>
+        <Header/>
+        <DateAndTime/>
+        <Footer/>
+    </>
     )
 }
 export default Main;
