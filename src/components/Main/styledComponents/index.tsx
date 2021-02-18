@@ -83,6 +83,7 @@ export const DateTimeContainer = styled.div`
   align-items: center;
   padding: 20px;
   margin-top: 370px;
+  margin-bottom: 100px;
 `;
 
 export const InputContainer = styled.div`
