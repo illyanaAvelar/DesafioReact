@@ -1,13 +1,18 @@
-import React from 'react';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import './assets/style/global.css'
+import Index from './pages/Index/Index'
+import Main from './pages/Main/Main'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        Desafio locação de carros.
-      </header>
-    </div>
-  );
-}
-
-export default App;
+const App = function () {
+    
+    return (
+        <BrowserRouter>
+            <Switch>
+                <Route exact path="/" component={Index}/>
+                <Route exact path="/main" component={Main}/>
+            </Switch>
+        </BrowserRouter>
+    );
+  };
+  
+  export default App;
