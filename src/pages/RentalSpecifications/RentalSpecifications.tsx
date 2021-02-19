@@ -17,7 +17,7 @@ const RentalSpecifications = () => {
         <Label color='black'>Escolha adicionais caso deseje</Label>
         <Aditionals/>
         <Label color='black'>Preencha seus dados para realizar a reserva</Label>
-        <Form/>
+        <Form register={false}/>
         <Button 
             negativeMargin={-5} 
             width={250}

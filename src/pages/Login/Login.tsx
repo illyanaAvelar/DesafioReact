@@ -4,6 +4,7 @@ import {LoginContainer, LoginFields, BackgroundImage, Label, StyledLink} from '.
 import logoImage from '../../shared/assets/images/logo.png';
 import { Link } from 'react-router-dom';
 import { Input, Button } from '../../shared/styledComponents'
+import Header from '../../shared/components/Header/Header'
 
 const Login = () => {
 
@@ -11,7 +12,8 @@ const Login = () => {
    
   }, []);
 
-  return (
+  return (<>
+    <Header/>
     <LoginContainer>
         <BackgroundImage />
         <LoginFields>
@@ -29,6 +31,7 @@ const Login = () => {
           </Link>
       </LoginFields>
     </LoginContainer>
+  </>
   );
 }
 
