@@ -6,6 +6,7 @@ export const AditionalsCardContainer = styled.div`
     flex-direction: row;
     justify-content: space-between;
     margin: 20px;
+    margin-bottom: 50px;
 `;
 
 export const StyledAditionalsCard = styled.div`
