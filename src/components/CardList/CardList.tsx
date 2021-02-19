@@ -7,9 +7,9 @@ const object123 = {
 }
   return (
    <CardListContainer>
-       <Card group='A' type="Tipo" name="Fiat Uno" details={object123}/>
-       <Card group='A' type="Tipo" name="Fiat Uno" details={object123}/>
-       <Card group='A' type="Tipo" name="Fiat Uno" details={object123}/>
+       <Card group='A' type="Econômico" name="Fiat Uno" details={object123}/>
+       <Card group='A' type="Econômico" name="Fiat Uno" details={object123}/>
+       <Card group='A' type="Econômico" name="Fiat Uno" details={object123}/>
    </CardListContainer>
   );
 }

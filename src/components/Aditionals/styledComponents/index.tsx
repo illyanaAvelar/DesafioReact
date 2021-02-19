@@ -8,7 +8,7 @@ export const AditionalsCardContainer = styled.div`
     margin: 20px;
 `;
 
-export const AditionalsCard = styled.div`
+export const StyledAditionalsCard = styled.div`
     display: flex;
     flex-direction: column;
     width: 300px;

@@ -4,7 +4,7 @@ import unoBasico1 from "./assets/uno-basico-1.0.png";
 import { Button } from '../../shared/styledComponents/index'
 import { useState } from 'react';
 
-interface CardProps {
+interface ICardProps {
   group: string;
   type: string;
   name: string;
@@ -12,7 +12,7 @@ interface CardProps {
 }
 
 
-function Card({group, type, name, details}: CardProps) {
+function Card({group, type, name, details}: ICardProps) {
   const [showDetails, setShowDetails] = useState(false);
   
   const showDetailsOnClick = () => {
