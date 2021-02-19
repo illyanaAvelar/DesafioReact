@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const AditionalsCardContainer = styled.div`
-    width: 75%;
+    width: 73%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
