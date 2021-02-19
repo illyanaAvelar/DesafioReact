@@ -18,7 +18,7 @@ function Header() {
             <span>
               <DirectionsCarIcon color='action' fontSize='large'/>
             </span>
-            <a href="#">Minhas Reservas</a>
+            <a href="my-reservations">Minhas Reservas</a>
           </div>
         
           <div id="perfil">
