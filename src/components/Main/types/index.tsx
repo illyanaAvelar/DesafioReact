@@ -11,3 +11,8 @@ export interface ISliderContent {
   transition: number;
   translate: any;
 }
+
+export interface ILabel {
+  color: string;
+}
+

@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   background: #00974a;
   justify-content: space-between;
+  margin-bottom: 100px;
 `;
 
 export const LadoEsquerdo = styled.div`

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { ISliderContent, IStyledSlide, IStyledArrow } from '../types/index'
+import { ISliderContent, IStyledSlide, IStyledArrow, ILabel } from '../types/index'
 
 export const MainContainer = styled.div`
     width: 100%;
@@ -82,7 +82,7 @@ export const DateTimeContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  margin-top: 370px;
+  margin-top: 270px;
   margin-bottom: 100px;
 `;
 
@@ -95,5 +95,5 @@ export const Label = styled.label`
     font-weight: bold;
     font-size: 18px;
     margin-bottom: 15px;
-    color: white;
+    color: ${(props: ILabel) => props.color};
 `;
