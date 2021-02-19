@@ -3,6 +3,9 @@ import * as C from "./styledComponents/index";
 import unoBasico1 from "./assets/uno-basico-1.0.png";
 import { Button } from '../../shared/styledComponents/index'
 import { useState } from 'react';
+import AcUnitIcon from '@material-ui/icons/AcUnit';
+import Work from '@material-ui/icons/Work';
+import Person from '@material-ui/icons/Person';
 
 interface ICardProps {
   group: string;
@@ -46,9 +49,17 @@ function Card({group, type, name, details}: ICardProps) {
           onClick={showDetailsOnClick}> Mais detalhes
           </Button>
               {showDetails && 
-              <div id="maisDetalhes">
-                TESTE
-              </div>
+              <C.Details>
+                <div>
+                  <AcUnitIcon/> Ar condicionado
+                </div>
+                <div>
+                  <Work/> 2 malas grandes
+                </div>
+                <div>
+                  <Person/> 5 pessoas
+                </div>
+              </C.Details>
               }
         </C.BottomCard>
       </C.Content>

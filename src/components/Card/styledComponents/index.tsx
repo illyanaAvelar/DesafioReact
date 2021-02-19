@@ -50,3 +50,8 @@ export const BottomCard = styled.div`
     margin-top: 20px;
   }
 `;
+
+export const Details = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
