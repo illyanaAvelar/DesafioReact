@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 import * as H from './styledComponents/index';
-import logo from "../../assets/images/logopb.png";
+import logo from "../../assets/images/whiteLogo.png";
 import PersonRoundedIcon from '@material-ui/icons/PersonRounded';
 import DirectionsCarIcon from '@material-ui/icons/DirectionsCar';
 
@@ -15,16 +15,12 @@ function Header() {
       <H.LadoDireito>
          
           <div id="minhasReservas">
-            <span>
-              <DirectionsCarIcon color='action' fontSize='large'/>
-            </span>
-            <a href="my-reservations">Minhas Reservas</a>
+              <DirectionsCarIcon fontSize='large' style={{ color:'white', marginRight: 10 }}/>
+            <a href="bookings">Minhas Reservas</a>
           </div>
         
           <div id="perfil">
-            <span>
-              <PersonRoundedIcon color='action' fontSize='large'/>  
-            </span>
+              <PersonRoundedIcon fontSize='large' style={{ color:'white', marginRight: 10 }}/>  
             <a href="/">Entrar</a>
           </div>
         
