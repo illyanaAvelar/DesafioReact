@@ -1,8 +1,9 @@
 
 import { useEffect } from 'react';
-import {LoginContainer, Input, Button, LoginFields, BackgroundImage, Label, StyledLink} from '../../components/Login/StyledComponents/index'; 
-import logoImage from '../../assets/images/logo.png';
+import {LoginContainer, LoginFields, BackgroundImage, Label, StyledLink} from '../../components/Login/styledComponents/index'; 
+import logoImage from '../../shared/assets/images/logo.png';
 import { Link } from 'react-router-dom';
+import { Input, Button } from '../../shared/styledComponents'
 
 const Login = () => {
 
@@ -20,11 +21,11 @@ const Login = () => {
             <StyledLink>Ainda não tenho uma conta</StyledLink>
           </Link>
           <Label>Login</Label>
-          <Input placeholder='email@exemplo.com'/>
+          <Input width={250} opacity={0.5} margin={0} placeholder='email@exemplo.com'/>
           <Label>Senha</Label>
-          <Input placeholder='Digite sua senha' type='password'/>
+          <Input width={250} opacity={0.5} margin={0} placeholder='Digite sua senha' type='password'/>
           <Link to='/main'>
-            <Button>LOGIN</Button>
+            <Button negativeMargin={-15} width={250}>LOGIN</Button>
           </Link>
       </LoginFields>
     </LoginContainer>
