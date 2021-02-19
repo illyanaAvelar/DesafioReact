@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 class LoginService {
-  getDocumentUrl = async (login:string) => {
-    const response = await axios.post(`${"BaseUrl"}/Login`, login);
+  getUserId = async (login:string, password:string) => {
+    const response = await axios.post('https://localhost:44311/api/Login', {login: login, password:password});
 
     return response.data;
   };

@@ -21,7 +21,7 @@ function Header() {
         
           <div id="perfil">
               <PersonRoundedIcon fontSize='large' style={{ color:'white', marginRight: 10 }}/>  
-            <a href="/">Entrar</a>
+            <a href="/login">Entrar</a>
           </div>
         
       
