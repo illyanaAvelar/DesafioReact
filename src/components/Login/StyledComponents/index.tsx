@@ -15,7 +15,6 @@ export const BackgroundImage = styled.div`
     background-size: auto;
     width: 500px;
     height: 100%;
-    margin-top: 110px;
     margin-left: 100px;
 `;
 
@@ -28,7 +27,6 @@ export const LoginFields = styled.div`
     align-items: center;
     box-shadow: 0px 3px 6px #00000012;
     margin-right: 150px;
-    margin-top: 80px;
     border-radius: 10px;
 `;
 
