@@ -3,9 +3,9 @@ import { useState } from 'react';
 import {LoginContainer, LoginFields, BackgroundImage, Label, StyledLink} from '../../components/Login/styledComponents/index'; 
 import logoImage from '../../shared/assets/images/logo.png';
 import { Link, useHistory } from 'react-router-dom';
-import { Input, Button } from '../../shared/styledComponents/index'
-import Header from '../../shared/components/Header/Header'
-import LoginService from '../../services/loginService'
+import { Input, Button } from '../../shared/styledComponents/index';
+import Header from '../../shared/components/Header/Header';
+import LoginService from '../../services/loginService';
 
 const Login = () => {
 
