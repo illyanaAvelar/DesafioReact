@@ -21,7 +21,7 @@ function Footer() {
             PERGUNTAS <br />
             FREQUENTES
           </span>
-          <a href="tel:08009792000">0800 979 2000</a>
+          <a>0800 979 2000</a>
         </S.PerguntasFrequentes>
 
         <S.EnvieMensagem>
@@ -30,7 +30,7 @@ function Footer() {
             ENVIE SUA <br />
             MENSAGEM
           </span>
-          <a href="tel:08009792000">0800 979 2000</a>
+          <a>0800 979 2000</a>
         </S.EnvieMensagem>
 
         <S.CentralReservas>
@@ -38,7 +38,7 @@ function Footer() {
           <span>
             CENTRAL <br /> DE RESERVAS
           </span>
-          <a href="tel:08009792000">0800 979 2000</a>
+          <a>0800 979 2000</a>
         </S.CentralReservas>
 
         <S.AssistenciaClientes>
@@ -46,7 +46,7 @@ function Footer() {
           <span>
             ASSISTÊNCIA <br /> A CLIENTES 24H
           </span>
-          <a href="tel:08009792020">0800 979 2020</a>
+          <a>0800 979 2020</a>
         </S.AssistenciaClientes>
       </S.FooterContatos>
 
