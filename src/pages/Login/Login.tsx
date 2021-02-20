@@ -28,11 +28,11 @@ const Login = () => {
     user.login = login;
     user.senha = password;
     const response = await LoginService.getUserId(user);
-    localStorage.setItem('userId', response.Id.toString());
-    if(!response.Id){
+    localStorage.setItem('userId', response.id);
+    if(!response.id){
       alert("Usuário inválido!")
     }
-    history.push('/main');
+      history.push('/main');
   };
 
   return (<>
