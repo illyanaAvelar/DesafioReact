@@ -12,21 +12,13 @@ const Login = () => {
   const history = useHistory();
 
   interface IUser {
-    id: number;
     login: string;
     senha: string;
-    passwordHash: string;
-    passwordSalt: string;
-    role: number;
   }
 
   var user : IUser = {
-    id: 1,
     login: '',
     senha: '',
-    passwordHash: '',
-    passwordSalt: '',
-    role: 0,
   }
 
   const [login, setLogin] = useState('');
@@ -35,12 +27,12 @@ const Login = () => {
   const handleOnClick = async (user:IUser) => {
     user.login = login;
     user.senha = password;
-    history.push('/main');
     const response = await LoginService.getUserId(user);
-    localStorage.setItem('userId', user.id.toString());
-    if(!response){
+    localStorage.setItem('userId', response.Id.toString());
+    if(!response.Id){
       alert("Usuário inválido!")
     }
+    history.push('/main');
   };
 
   return (<>
@@ -64,7 +56,7 @@ const Login = () => {
             width={250} 
             opacity={0.5} 
             margin={0} 
-            placeholder='email@exemplo.com'
+            placeholder='CPF ou CNPJ'
             onChange={e => {
               setLogin(e.target.value);
             }}
