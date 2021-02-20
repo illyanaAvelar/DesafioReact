@@ -5,6 +5,7 @@ import Aditionals from '../../components/Aditionals/Aditionals'
 import { Label } from '../../components/Main/styledComponents/index'
 import { useState } from 'react';
 import Form from '../../components/Form/Form'
+import Modal from '../../components/Modal/Modal'
 
 const RentalSpecifications = () => {
     const [openModal, setOpenModal] = useState(false);
@@ -25,6 +26,7 @@ const RentalSpecifications = () => {
         >
         Realizar Reserva
         </Button>
+        {openModal && <Modal text="Aguarde a confirmação da reserva"/>}
     </>
     )
 }

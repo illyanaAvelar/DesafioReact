@@ -1,9 +1,9 @@
 import React from 'react';
-import Login from '../Login/Login'
+import Main from '../Main/Main'
 
 const Index = () => {
   return (
-    <Login/> 
+    <Main/> 
   );
 }
 

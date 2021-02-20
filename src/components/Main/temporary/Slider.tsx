@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { StyledSlider, SliderContent } from '../styledComponents'
 import Slide from './Slide'
-import Arrow from './Arrow'
+import Arrow from '../temporary/Arrow'
 
 const Slider = (props:any) => {
     const getWidth = () => window.innerWidth

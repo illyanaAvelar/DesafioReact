@@ -1,8 +1,10 @@
-import {DateTimeContainer, InputContainer, Label} from '../styledComponents/index'
+import {DateTimeContainer, InputContainer, Label, Advertising} from '../styledComponents/index'
 import { Input, Button } from '../../../shared/styledComponents/index'
 import { Link } from 'react-router-dom';
 
 const DateAndTime = () => (
+<>
+    <Advertising>► Advertising here ◄</Advertising>
     <DateTimeContainer>
         <Label color='white'>BUSQUE POR UM CARRO PARA ALUGAR</Label>
         <InputContainer>
@@ -21,8 +23,8 @@ const DateAndTime = () => (
                 </Button>
             </Link>
         </InputContainer>
-        
     </DateTimeContainer>
+</>
 )
 
 export default DateAndTime

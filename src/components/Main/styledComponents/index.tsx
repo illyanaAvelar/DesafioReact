@@ -97,3 +97,15 @@ export const Label = styled.label`
     margin-bottom: 15px;
     color: ${(props: ILabel) => props.color};
 `;
+
+export const Advertising = styled.div`
+  height: 450px;
+  width: 100%;
+  background-color: #414141;
+  margin-bottom: -350px;
+  margin-top: -100px;
+  color: green;
+  font-size: 60px;
+  text-align: center;
+  padding-top: 150px;
+`;

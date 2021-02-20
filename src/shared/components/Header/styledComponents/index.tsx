@@ -15,7 +15,7 @@ export const LadoEsquerdo = styled.div`
   
   img {
     width: 120px;
-    height: 50px;
+    height: 40px;
     padding-left: 20px;
   }
 `;
