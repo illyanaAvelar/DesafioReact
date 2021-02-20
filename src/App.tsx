@@ -13,7 +13,7 @@ const App = function () {
         <BrowserRouter>
             <Switch>
                 <Route exact path="/" component={Index}/>
-                <Route exact path="/login" component={Login}/>
+                {/* <Route exact path="/login" component={Login}/> */}
                 <Route exact path="/main" component={Main}/>
                 <Route exact path="/rental-specifications" component={RentalSpecifications}/>
                 <Route exact path="/register" component={Register}/>
