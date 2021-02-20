@@ -18,7 +18,7 @@ export const Content = styled.div`
   padding:10px;
   cursor: pointer;
   transition: all 0.5s ease;
-  background: #f3f5f7;
+  background: #ffffff;
   &:hover {
     opacity: 0.7;
   }

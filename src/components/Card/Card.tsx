@@ -14,7 +14,6 @@ interface ICardProps {
   details: object;
 }
 
-
 function Card({group, type, name, details}: ICardProps) {
   const [showDetails, setShowDetails] = useState(false);
   

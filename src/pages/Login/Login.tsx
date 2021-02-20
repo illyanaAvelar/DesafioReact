@@ -2,19 +2,45 @@
 import { useState } from 'react';
 import {LoginContainer, LoginFields, BackgroundImage, Label, StyledLink} from '../../components/Login/styledComponents/index'; 
 import logoImage from '../../shared/assets/images/logo.png';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import { Input, Button } from '../../shared/styledComponents'
 import Header from '../../shared/components/Header/Header'
 import LoginService from '../../services/loginService'
 
 const Login = () => {
-  
+
+  const history = useHistory();
+
+  interface IUser {
+    id: number;
+    login: string;
+    senha: string;
+    passwordHash: string;
+    passwordSalt: string;
+    role: number;
+  }
+
+  var user : IUser = {
+    id: 1,
+    login: '',
+    senha: '',
+    passwordHash: '',
+    passwordSalt: '',
+    role: 0,
+  }
+
   const [login, setLogin] = useState('');
   const [password, setPassword] = useState('');
   
-  const handleOnClick = async (login:string, password:string) => {
-    const id = await LoginService.getUserId(login, password);
-    localStorage.setItem('userId', id);
+  const handleOnClick = async (user:IUser) => {
+    user.login = login;
+    user.senha = password;
+    history.push('/main');
+    const response = await LoginService.getUserId(user);
+    localStorage.setItem('userId', user.id.toString());
+    if(!response){
+      alert("Usuário inválido!")
+    }
   };
 
   return (<>
@@ -54,15 +80,13 @@ const Login = () => {
               setPassword(e.target.value);
             }}
           />
-          <Link to='/main'>
-            <Button 
-              negativeMargin={-15} 
-              width={250}
-              onClick={()=>{handleOnClick(login, password)}}
-            >
-              LOGIN
-            </Button>
-          </Link>
+          <Button 
+            negativeMargin={-15} 
+            width={250}
+            onClick={()=>{handleOnClick(user)}}
+          >
+            LOGIN
+          </Button>
       </LoginFields>
     </LoginContainer>
   </>
