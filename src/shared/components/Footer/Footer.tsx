@@ -21,7 +21,7 @@ function Footer() {
             PERGUNTAS <br />
             FREQUENTES
           </span>
-          <a href="tel:08009792000">0800 979 2000</a>
+          <a href="/">0800 979 2000</a>
         </S.PerguntasFrequentes>
 
         <S.EnvieMensagem>
@@ -30,7 +30,7 @@ function Footer() {
             ENVIE SUA <br />
             MENSAGEM
           </span>
-          <a href="tel:08009792000">0800 979 2000</a>
+          <a href="/">0800 979 2000</a>
         </S.EnvieMensagem>
 
         <S.CentralReservas>
@@ -38,7 +38,7 @@ function Footer() {
           <span>
             CENTRAL <br /> DE RESERVAS
           </span>
-          <a href="tel:08009792000">0800 979 2000</a>
+          <a href="/">0800 979 2000</a>
         </S.CentralReservas>
 
         <S.AssistenciaClientes>
@@ -46,7 +46,7 @@ function Footer() {
           <span>
             ASSISTÊNCIA <br /> A CLIENTES 24H
           </span>
-          <a href="tel:08009792020">0800 979 2020</a>
+          <a href="/">0800 979 2020</a>
         </S.AssistenciaClientes>
       </S.FooterContatos>
 
@@ -55,16 +55,16 @@ function Footer() {
           <h3>INSTITUCIONAL</h3>
           <ul>
             <li>
-              <a href="#">Sobre a Localiza</a>
+              <a href="/">Sobre a Localiza</a>
             </li>
             <li>
-              <a href="#">Relação com Investidor</a>
+              <a href="/">Relação com Investidor</a>
             </li>
             <li>
-              <a href="#">Sala de Imprensa</a>
+              <a href="/">Sala de Imprensa</a>
             </li>
             <li>
-              <a href="#">Trabalhe Conosco</a>
+              <a href="/">Trabalhe Conosco</a>
             </li>
           </ul>
         </S.FooterInstitucional>
@@ -73,16 +73,16 @@ function Footer() {
           <h3>NEGÓCIOS</h3>
           <ul>
             <li>
-              <a href="#">Para empresas</a>
+              <a href="/">Para empresas</a>
             </li>
             <li>
-              <a href="#">Agências de viagem</a>
+              <a href="/">Agências de viagem</a>
             </li>
             <li>
-              <a href="#">Seguradoras</a>
+              <a href="/">Seguradoras</a>
             </li>
             <li>
-              <a href="#">Seja um franqueado</a>
+              <a href="/">Seja um franqueado</a>
             </li>
           </ul>
         </S.FooterNegocios>
@@ -91,16 +91,16 @@ function Footer() {
           <h3>PARA VOCÊ</h3>
           <ul>
             <li>
-              <a href="#">Minhas reservas</a>
+              <a href="/">Minhas reservas</a>
             </li>
             <li>
-              <a href="#">Roteiros de Viagem</a>
+              <a href="/">Roteiros de Viagem</a>
             </li>
             <li>
-              <a href="#">Fidelidade</a>
+              <a href="/">Fidelidade</a>
             </li>
             <li>
-              <a href="#">Cadastre-se</a>
+              <a href="/">Cadastre-se</a>
             </li>
           </ul>
         </S.FooterPraVoce>

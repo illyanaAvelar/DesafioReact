@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const DateAndTime = () => (
 <>
-    <Advertising>► Advertising here ◄</Advertising>
+    <Advertising/>
     <DateTimeContainer>
         <Label color='white'>BUSQUE POR UM CARRO PARA ALUGAR</Label>
         <InputContainer>

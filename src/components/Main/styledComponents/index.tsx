@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { ISliderContent, IStyledSlide, IStyledArrow, ILabel } from '../types/index'
+import advertisingImage from '../../../shared/assets/images/advertising.jpg';
 
 export const MainContainer = styled.div`
     width: 100%;
@@ -108,4 +109,7 @@ export const Advertising = styled.div`
   font-size: 60px;
   text-align: center;
   padding-top: 150px;
+  background-image: url(${advertisingImage});
+  background-repeat: no-repeat;
+  background-size: cover;
 `;
